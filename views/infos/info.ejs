@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.rtl.min.css" integrity="sha384-4dNpRvNX0c/TdYEbYup8qbjvjaMrgUPh+g4I03CnNtANuv+VAvPL6LqdwzZKV38G" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v2.1.9/css/unicons.css">
+    <link rel="stylesheet" href="../../style/style.css">
+    <link rel="stylesheet" href="../../style/info.css">
+</head>
+<body>
+    <div class="container">
+    <%- include('../partials/head.ejs')  -%> 
+</div>
+    <div class="product-card">
+        <h1><%= data[param].Name %></h1>
+        <p><%=  data[param].Size  %></p>
+        <div class="product-image"><img src=../../<%=  data[param].Src %>> </div>
+        <div class="product-colors">
+          <span class="blue active" data-color="#7ed6df" data-image="url(https://previews.dropbox.com/p/thumb/AA0k2qH1VBqm7lOXr7rIL9z5PZwHWGC3XsDyb-pkHhUlTZEH71crMVxLoRMkrhiLiVzNwmXd_W48wOcvt3wVYKr_LqvwL7MQZOYF5IQKsN69vR5Vj5EO-CkRMA8W7DBzUjBPrrsdfqjuNQm6c_PP94aQoaJYuGVPzvQvpKZrAvTkvxK_GBTRmWxpHiGrqbFGNcTv1zOIT6zU9BupHSVeoLCHPVyqUwXNtsEjZ69OiZLsA-V6yXpFQZq84dVI4jtjKClMZyeqPMl0FpstrIkqhwcMGKgGabhZbh2eY5J2fsAzmojIcRqpT2cfMylqjgP-SS5x4d-gOViux6WxSXEz9UvHt5PLz5cTF7jm4hzLdNWpJQ/p.png?fv_content=true&size_mode=5)"></span>
+          <span class="green" data-color="#badc58" data-image="url(https://previews.dropbox.com/p/thumb/AA1Vc02ZEf1KnsCAo7tuIdLS-D75cZMeYg7ZQzhtMRxVYTa8oLAzJNqoJe7taWYCczJiYfnpsQgFrWyxYjIRPMZQwjYuLozn8_xa9ALSeDICklnQ8zOjoDeQ-W4nmOqt6BWGskyQhgB9-RjIoyz7tC3zbJQh_MTUOf5ulhtA-mPLfFyny98wLiA_7GdqzuljmJCGU9QkI0WeFMr3-UxUmsLrnxJ2BSa--USq6OA9URgoR6cX_8w9vIzDPVj5FrZ5YLWkeJWOZT61VguidHX9hM27TX3wbrlJnvuCvPoF7TXEXP7cttkgFnyBFWykykmAYRJxj9838a3Z7smE1jtiBKgKwQe5JnXJ2tZ3w2Ce0dS27g/p.png?fv_content=true&size_mode=5)"></span>
+          <span class="yellow" data-color="#f9ca24" data-image="url(https://previews.dropbox.com/p/thumb/AA1Z_zatLZfMBO2nH4cv_u7fw7BIZQpXCAQAhh7bVcTbAAX2-YcFPuMcZkqEzq_yw3vHHvjG4o1eYjrcuysSjhV1sXXE1tpWAGCtHmE-7k0JKP9m9T0WvKJ1gexUTFXDZJRdfJUeNICxy-NAaY6loVM-vGy7ETSGGwTan9QAteo0s-P6WUS6YAZZ7QRdDsqEe7sBaUdHPz5upD2BxKzKd_LBu8T-gLuWprot1f0h891DR9eBjGosna_t1ZOvA6qhQQ9TGlLdI8U9d-cHNoxPS34iyBScQ9fgVEZAHLokGHKn0fEOPcBbHW132fFP_0rJ2RKY0AQqHVm0d0vUpKYKM28hASMdscSm7691B_yB92uaIA/p.png?fv_content=true&size_mode=5)"></span>
+          <span class="rose" data-color="#ff7979" data-image="url(https://previews.dropbox.com/p/thumb/AA3QR_yWzSWLd9-xvbO0Fi8Gr2mo2XuycNjSYTx-d3z7PGl0A_mtaHmE4A0T-XskmlPr5x1tzBJyBavsw_yY9Kx1_rZik7D7PLzCRbbooAl5XqNiDvKJSai1u-aJgYtvrLvdeo7Fq8igYR1tLuaeBQvhd8JgmAbZV_u7PKgqIn3RZBMgG6NEVSCC5O39ZvbS0KFajx5ls7NgMGKP9Dh44a0llByOpSFGYA_BUp_-GbVLgTqhzhCiyRNLITQu34SDCudwvEvWdMxaiYiiXEwj_i4NR2RTUgmQW6q9W3bOM9WY2VWwvi3jTWBpvQUKE_tdYAopvNGUeSv3lv3miowrlsJAWDZtyTfcnnxc-DQTlGhXtA/p.png?fv_content=true&size_mode=5)"></span>
+        </div>
+        <div class="product-info">
+          <div class="product-price"><%=  data[param].Price %></div>
+          <a href="#" class="product-button">پرداخت</a>
+        </div>
+      </div>
+      
+          <script src="../../js/info.js"></script>
+          <script src="../../js/search.js"></script>
+      </body>
+      </html>
